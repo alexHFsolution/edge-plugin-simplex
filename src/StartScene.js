@@ -86,7 +86,7 @@ class StartScene extends Component<Props, State> {
         <div>
           <StartHeader text="Simplex" classes={classes} />
           <StartParagraph classes={classes}>
-            Simplex is an RockItCoin bank and card processing partner. It is the service which allows you to purchase Bitcoin, Bitcoin Cash, Bitcoin SV, Ethereum, Litecoin
+            is a RockItCoin bank and card processing partner. It is the service which allows you to purchase Bitcoin, Bitcoin Cash, Bitcoin SV, Ethereum, Litecoin
             and Ripple/XRP and sell Bitcoin. You can do this safely and quickly in just a few short minutes.
           </StartParagraph>
         </div>
