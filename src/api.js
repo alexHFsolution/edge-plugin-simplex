@@ -5,15 +5,15 @@ import React from 'react'
 import { cancelableFetch } from './utils'
 import uuidv1 from 'uuid/v1'
 
-export const PROVIDER = 'rockitcoin-api'
+export const PROVIDER = 'edge'
 export const API_VERSION = '1'
 export const ACCEPT_LANGUAGE = 'en-US;q=0.7,en;q=0.3'
 export const HTTP_ACCEPT = 'en-US;q=0.7,en;q=0.3'
 export const LIMITS = {
   USD: {
     min: 50,
-    daily: 20000,
-    monthly: 50000
+    daily: 18800,
+    monthly: 47000
   },
   EUR: {
     min: 42.35,
@@ -132,7 +132,7 @@ export function requestAbort () {
   }
 }
 
-export const SUPPORTED_DIGITAL_CURRENCIES = ['BTC', 'ETH', 'BCH', 'LTC', 'XRP', 'BSV']
+export const SUPPORTED_DIGITAL_CURRENCIES = ['BTC', 'ETH', 'BCH', 'LTC', 'BSV', 'USDT']
 
 export const SUPPORTED_FIAT_CURRENCIES = ['USD', 'EUR', 'GBP', 'ILS', 'TRY', 'CAD', 'CHF', 'KRW', 'JPY', 'RUB', 'AUD', 'CZK', 'NOK', 'DKK', 'NZD', 'SEK', 'ZAR', 'HUF', 'PLN', 'INR', 'AED']
 
@@ -188,7 +188,7 @@ export async function requestConfirm (sessionId, uaid, quote) {
       app_version_id: API_VERSION,
       app_end_user_id: userId,
       signup_login: {
-        ip: '1.2.3.4',
+        ip: '4.30.5.194',
         uaid: uaid,
         accept_language: ACCEPT_LANGUAGE,
         http_accept_language: HTTP_ACCEPT,

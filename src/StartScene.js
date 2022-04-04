@@ -8,7 +8,6 @@ import React, { Component } from 'react'
 
 import Divider from 'material-ui/Divider'
 import { EdgeButton } from './components/EdgeButton'
-import Grid from 'material-ui/Grid'
 import { StartHeader } from './components/StartHeader'
 import { StartParagraph } from './components/StartParagraph'
 import { withStyles } from 'material-ui/styles'
@@ -86,8 +85,7 @@ class StartScene extends Component<Props, State> {
         <div>
           <StartHeader text="Simplex" classes={classes} />
           <StartParagraph classes={classes}>
-            is a RockItCoin bank and card processing partner. It is the service which allows you to purchase Bitcoin, Bitcoin Cash, Bitcoin SV, Ethereum, Litecoin
-            and Ripple/XRP and sell Bitcoin. You can do this safely and quickly in just a few short minutes.
+            is a RockItCoin Wallet bank and card processing partner. It is the service which allows you to purchase Bitcoin, Bitcoin Cash, Bitcoin SV, Ethereum, Tether (USDT), and Litecoin. You can do this safely and quickly in just a few short minutes.
           </StartParagraph>
         </div>
         <Divider className={classes.divider} />
@@ -104,18 +102,9 @@ class StartScene extends Component<Props, State> {
         </div>
         <Divider className={classes.divider} />
         <div>
-          <Grid container spacing={24}>
-            <Grid item xs>
-              <EdgeButton color="primary" onClick={this._buy}>
+          <EdgeButton color="primary" onClick={this._buy}>
                 Buy Crypto
-              </EdgeButton>
-            </Grid>
-            {/* <Grid item xs>
-              <EdgeButton color="secondary" onClick={this._sell}>
-                Sell Crypto
-              </EdgeButton>
-            </Grid> */}
-          </Grid>
+          </EdgeButton>
           <EdgeButton color="default" onClick={this._gotoEvents}>
             Transactions
           </EdgeButton>
